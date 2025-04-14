@@ -2,7 +2,7 @@ usr/include/*/transport[0-9][0-9]/*/transport.hh
 usr/include/*/transport[0-9][0-9]/*/transport/*.h
 usr/include/*/transport[0-9][0-9]/*/transport/*.hh
 usr/include/*/transport[0-9][0-9]/*/transport/detail/*.hh
-usr/lib/*/lib*-transport[0-9][0-9].so
-usr/lib/*/pkgconfig/*-transport[0-9][0-9].pc
-usr/lib/*/cmake/*-transport[0-9][0-9]/*-transport*
-usr/share/gz/*-transport*/*-transport[0-9][0-9].tag.xml
+usr/lib/*/lib*-transport.so
+usr/lib/*/pkgconfig/*-transport.pc
+usr/lib/*/cmake/*-transport/*-transport*
+usr/share/gz/*-transport*/*-transport.tag.xml

@@ -1,6 +1,6 @@
 usr/include/*/transport*/*/transport/log.hh
 usr/include/*/transport*/*/transport/log/*
-usr/lib/*/cmake/*-transport[0-9][0-9]-log/*
-usr/lib/*/lib*-transport[0-9][0-9]-log.so
-usr/lib/*/pkgconfig/*-transport[0-9][0-9]-log.pc
-usr/share/gz/*-transport[0-9][0-9]/sql/*
+usr/lib/*/cmake/*-transport-log/*
+usr/lib/*/lib*-transport-log.so
+usr/lib/*/pkgconfig/*-transport-log.pc
+usr/share/gz/*-transport/sql/*
