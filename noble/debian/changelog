@@ -1,3 +1,9 @@
+gz-transport15 (15.0.0~pre2-1~noble) noble; urgency=medium
+
+  * gz-transport15 15.0.0~pre2-1 release
+
+ -- Carlos Aguero <caguero@osrfoundation.org>  Tue, 09 Sep 2025 19:19:59 +0200
+
 gz-transport15 (15.0.0~pre1-2~noble) noble; urgency=medium
 
   * gz-transport15 15.0.0~pre1-2 release
