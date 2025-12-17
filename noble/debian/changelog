@@ -1,3 +1,9 @@
+gz-transport15 (15.0.1-1~noble) noble; urgency=medium
+
+  * gz-transport15 15.0.1-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Wed, 17 Dec 2025 18:48:15 +0000
+
 gz-transport15 (15.0.0-1~noble) noble; urgency=medium
 
   * gz-transport15 15.0.0-1 release
