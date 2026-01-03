@@ -1,36 +1,6 @@
-gz-transport15 (15.0.1-1~noble) noble; urgency=medium
-
-  * gz-transport15 15.0.1-1 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Wed, 17 Dec 2025 18:48:15 +0000
-
-gz-transport15 (15.0.0-1~noble) noble; urgency=medium
-
-  * gz-transport15 15.0.0-1 release
-
- -- Ian Chen <ichen@openrobotics.org>  Fri, 26 Sep 2025 22:11:53 +0000
-
-gz-transport15 (15.0.0~pre2-1~noble) noble; urgency=medium
-
-  * gz-transport15 15.0.0~pre2-1 release
-
- -- Carlos Aguero <caguero@osrfoundation.org>  Tue, 09 Sep 2025 19:19:59 +0200
-
-gz-transport15 (15.0.0~pre1-2~noble) noble; urgency=medium
-
-  * gz-transport15 15.0.0~pre1-2 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Tue, 26 Aug 2025 19:38:00 -0500
-
-gz-transport15 (15.0.0~pre1-1~noble) noble; urgency=medium
-
-  * gz-transport15 15.0.0~pre1-1 release
-
- -- Carlos Aguero <caguero@osrfoundation.org>  Tue, 26 Aug 2025 23:32:39 +0200
-
-gz-transport15 (14.999.999-1~noble) noble; urgency=medium
+gz-transport16 (15.999.999-1~noble) noble; urgency=medium
 
   * Stub to be removed after first entry
 
- -- Carlos Aguero <caguero@openrobotics.org>  Tue, 08 Oct 2024 21:00:24 +0200
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Sat, 03 Jan 2026 00:30:23 +0000
 

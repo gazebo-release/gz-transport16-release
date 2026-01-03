@@ -1,4 +1,4 @@
-Source: gz-transport15
+Source: gz-transport16
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -27,14 +27,14 @@ Build-Depends: cmake,
                libzmq3-dev (>= 3.0.0),
                libsqlite3-dev
 Vcs-Browser: https://github.com/gazebosim/gz-transport
-Vcs-Git: https://github.org/gazebo-release/gz-transport15-release
+Vcs-Git: https://github.org/gazebo-release/gz-transport16-release
 Standards-Version: 4.5.1
 Homepage: https://github.com/gazebo-release/gz-transport
 
-Package: libgz-transport15-core-dev
+Package: libgz-transport16-core-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-transport15 (= ${binary:Version}),
+Depends: libgz-transport16 (= ${binary:Version}),
          uuid-dev,
          cppzmq-dev,
          libzmq3-dev (>= 3.0.0),
@@ -59,12 +59,12 @@ Description: Gazebo transport Library - Core Dev files
  The package ships the Gazebo transport core development files
 
 
-Package: libgz-transport15
+Package: libgz-transport16
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}, libzenohc
-Recommends: gz-transport15-cli
+Recommends: gz-transport16-cli
 Multi-Arch: same
 Description: Gazebo Transport Library - Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -78,9 +78,9 @@ Description: Gazebo Transport Library - Shared library
  .
  The package ships the Gazebo transport libraries
 
-Package: gz-transport15-cli
+Package: gz-transport16-cli
 Architecture: any
-Depends: libgz-transport15 (= ${binary:Version}),
+Depends: libgz-transport16 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
 Multi-Arch: no
@@ -96,13 +96,13 @@ Description: Gazebo transport Library - CLI
  .
  The package ships the CLI.
 
-Package: libgz-transport15-log-dev
+Package: libgz-transport16-log-dev
 Architecture: any
 Section: libdevel
 Depends: libsqlite3-dev,
          libgz-cmake5-dev,
-         libgz-transport15-core-dev (= ${binary:Version}),
-         libgz-transport15-log (= ${binary:Version}),
+         libgz-transport16-core-dev (= ${binary:Version}),
+         libgz-transport16-log (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev
@@ -117,7 +117,7 @@ Description: Gazebo transport Library - Core Dev
  .
  The package ships the Gazebo core development libraries
 
-Package: libgz-transport15-log
+Package: libgz-transport16-log
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -135,12 +135,12 @@ Description: Gazebo Transport Library - Log Shared library
  .
  The package ships the log shared library
 
-Package: libgz-transport15-parameters-dev
+Package: libgz-transport16-parameters-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake5-dev,
-         libgz-transport15-core-dev (= ${binary:Version}),
-         libgz-transport15-parameters (= ${binary:Version}),
+         libgz-transport16-core-dev (= ${binary:Version}),
+         libgz-transport16-parameters (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo transport Library - Parameters Dev
@@ -155,7 +155,7 @@ Description: Gazebo transport Library - Parameters Dev
  .
  The package ships the Gazebo transport parameters development libraries
 
-Package: libgz-transport15-parameters
+Package: libgz-transport16-parameters
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -173,12 +173,12 @@ Description: Gazebo Transport Library - Parameters Shared library
  .
  The package ships the Gazebo Transport parameters shared library
 
-Package: libgz-transport15-dev
+Package: libgz-transport16-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-transport15-core-dev (= ${binary:Version}),
-         libgz-transport15-log-dev (= ${binary:Version}),
-         libgz-transport15-parameters-dev (= ${binary:Version}),
+Depends: libgz-transport16-core-dev (= ${binary:Version}),
+         libgz-transport16-log-dev (= ${binary:Version}),
+         libgz-transport16-parameters-dev (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo transport Library - Metapackage
@@ -193,12 +193,12 @@ Description: Gazebo transport Library - Metapackage
  .
  The is a metapackage for all development files
 
-Package: libgz-transport15-dbg
+Package: libgz-transport16-dbg
 Architecture: any
 Section: debug
 Priority: optional
 Depends:
-     libgz-transport15 (= ${binary:Version}),
+     libgz-transport16 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo transport Library - Debugging symbols
@@ -213,16 +213,16 @@ Description: Gazebo transport Library - Debugging symbols
  .
  The package ships the debugging symbols
 
-Package: python3-gz-transport15
+Package: python3-gz-transport16
 Architecture: any
 Depends:
-     libgz-transport15 (= ${binary:Version}),
+     libgz-transport16 (= ${binary:Version}),
      python3-pybind11,
      python3-gz-msgs12,
      ${shlibs:Depends},
      ${misc:Depends},
      ${python3:Depends}
-Enhances: libgz-transport15
+Enhances: libgz-transport16
 Description: Gazebo transport Library - Python3 bindings
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
@@ -234,51 +234,3 @@ Description: Gazebo transport Library - Python3 bindings
  logging, 3D mesh management, and asynchronous message passing.
  .
  The package contains the Python3 bindings.
-
-Package: gz-jetty-transport
-Depends: libgz-transport15-dev (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.
-
-Package: gz-jetty-transport-cli
-Depends: gz-transport15-cli (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.
-
-Package: gz-jetty-transport-core
-Depends: libgz-transport15-core-dev (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.
-
-Package: gz-jetty-transport-log
-Depends: libgz-transport15-log-dev (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.
-
-Package: gz-jetty-transport-parameters
-Depends: libgz-transport15-parameters-dev (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.
-
-Package: gz-jetty-transport-python
-Depends: python3-gz-transport15 (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.
