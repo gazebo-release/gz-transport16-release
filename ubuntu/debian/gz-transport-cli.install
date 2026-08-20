@@ -1,4 +1,4 @@
-usr/libexec/gz/transport[0-9][0-9]/*
-usr/lib/ruby/*/cmdtransport[0-9][0-9].rb
-usr/share/*/transport[0-9][0-9].yaml
+usr/libexec/gz/transport/*
+usr/lib/ruby/*/cmdtransport.rb
+usr/share/*/transport.yaml
 usr/share/gz/*.completion*/*
