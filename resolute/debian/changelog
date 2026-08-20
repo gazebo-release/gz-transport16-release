@@ -1,5 +1,5 @@
-gz-transport16 (15.999.999-1~resolute) resolute; urgency=medium
+gz-transport16 (16.0.0~pre1-1~resolute) resolute; urgency=medium
 
-  * Stub to be removed after first entry
+  * gz-transport16 16.0.0~pre1-1 release
 
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Sat, 03 Jan 2026 00:30:23 +0000
+ -- Addisu Z. Taddese <addisuzt@intrinsic.ai>  Thu, 20 Aug 2026 04:22:03 +0000
