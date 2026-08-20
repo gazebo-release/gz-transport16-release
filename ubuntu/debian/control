@@ -12,11 +12,11 @@ Build-Depends: cmake,
                ruby-ronn,
                libprotoc-dev,
                libprotobuf-dev,
-               libgz-msgs12-dev,
-               libgz-cmake5-dev,
-               libgz-tools2-dev,
-               libgz-utils4-cli-dev,
-               libgz-utils4-dev,
+               libgz-msgs13-dev,
+               libgz-cmake6-dev,
+               libgz-tools3-dev,
+               libgz-utils5-cli-dev,
+               libgz-utils5-dev,
                protobuf-compiler,
                python3,
                python3-dev,
@@ -26,10 +26,10 @@ Build-Depends: cmake,
                libzenohcpp-dev,
                libzmq3-dev (>= 3.0.0),
                libsqlite3-dev
-Vcs-Browser: https://github.com/gazebosim/gz-transport
-Vcs-Git: https://github.org/gazebo-release/gz-transport16-release
+Vcs-Browser: https://github.com/gazebo-release/gz-transport16-release
+Vcs-Git: https://github.com/gazebo-release/gz-transport16-release.git
 Standards-Version: 4.5.1
-Homepage: https://github.com/gazebo-release/gz-transport
+Homepage: https://gazebosim.org/
 
 Package: libgz-transport16-core-dev
 Architecture: any
@@ -38,13 +38,16 @@ Depends: libgz-transport16 (= ${binary:Version}),
          uuid-dev,
          cppzmq-dev,
          libzmq3-dev (>= 3.0.0),
-         libgz-msgs12-dev,
-         libgz-cmake5-dev,
-         libgz-tools2-dev,
-         libgz-utils4-cli-dev,
-         libgz-utils4-dev,
+         libgz-msgs13-dev,
+         libgz-cmake6-dev,
+         libgz-tools3-dev,
+         libgz-utils5-cli-dev,
+         libgz-utils5-dev,
          ${shlibs:Depends},
          ${misc:Depends}
+Provides: libgz-transport-core-dev-generic
+Conflicts: libgz-transport-core-dev-generic, libgz-transport11-core-dev, libgz-transport13-core-dev, libgz-transport14-core-dev, libgz-transport15-core-dev
+Replaces: libgz-transport11-core-dev, libgz-transport13-core-dev, libgz-transport14-core-dev, libgz-transport15-core-dev
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev files
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -58,13 +61,15 @@ Description: Gazebo transport Library - Core Dev files
  .
  The package ships the Gazebo transport core development files
 
-
 Package: libgz-transport16
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}, libzenohc
 Recommends: gz-transport16-cli
+Provides: libgz-transport-generic
+Conflicts: libgz-transport-generic, libgz-transport11, libgz-transport13, libgz-transport14, libgz-transport15
+Replaces: libgz-transport11, libgz-transport13, libgz-transport14, libgz-transport15
 Multi-Arch: same
 Description: Gazebo Transport Library - Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -83,6 +88,9 @@ Architecture: any
 Depends: libgz-transport16 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
+Provides: gz-transport-cli-generic
+Conflicts: gz-transport-cli-generic, gz-transport11-cli, gz-transport13-cli, gz-transport14-cli, gz-transport15-cli
+Replaces: gz-transport11-cli, gz-transport13-cli, gz-transport14-cli, gz-transport15-cli
 Multi-Arch: no
 Description: Gazebo transport Library - CLI
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -100,10 +108,13 @@ Package: libgz-transport16-log-dev
 Architecture: any
 Section: libdevel
 Depends: libsqlite3-dev,
-         libgz-cmake5-dev,
+         libgz-cmake6-dev,
          libgz-transport16-core-dev (= ${binary:Version}),
          libgz-transport16-log (= ${binary:Version}),
          ${misc:Depends}
+Provides: libgz-transport-log-dev-generic
+Conflicts: libgz-transport-log-dev-generic, libgz-transport11-log-dev, libgz-transport13-log-dev, libgz-transport14-log-dev, libgz-transport15-log-dev
+Replaces: libgz-transport11-log-dev, libgz-transport13-log-dev, libgz-transport14-log-dev, libgz-transport15-log-dev
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -122,6 +133,9 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libgz-transport-log-generic
+Conflicts: libgz-transport-log-generic, libgz-transport11-log, libgz-transport13-log, libgz-transport14-log, libgz-transport15-log
+Replaces: libgz-transport11-log, libgz-transport13-log, libgz-transport14-log, libgz-transport15-log
 Multi-Arch: same
 Description: Gazebo Transport Library - Log Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -138,10 +152,13 @@ Description: Gazebo Transport Library - Log Shared library
 Package: libgz-transport16-parameters-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake5-dev,
+Depends: libgz-cmake6-dev,
          libgz-transport16-core-dev (= ${binary:Version}),
          libgz-transport16-parameters (= ${binary:Version}),
          ${misc:Depends}
+Provides: libgz-transport-parameters-dev-generic
+Conflicts: libgz-transport-parameters-dev-generic, libgz-transport11-parameters-dev, libgz-transport13-parameters-dev, libgz-transport14-parameters-dev, libgz-transport15-parameters-dev
+Replaces: libgz-transport11-parameters-dev, libgz-transport13-parameters-dev, libgz-transport14-parameters-dev, libgz-transport15-parameters-dev
 Multi-Arch: same
 Description: Gazebo transport Library - Parameters Dev
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -160,6 +177,9 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libgz-transport-parameters-generic
+Conflicts: libgz-transport-parameters-generic, libgz-transport11-parameters, libgz-transport13-parameters, libgz-transport14-parameters, libgz-transport15-parameters
+Replaces: libgz-transport11-parameters, libgz-transport13-parameters, libgz-transport14-parameters, libgz-transport15-parameters
 Multi-Arch: same
 Description: Gazebo Transport Library - Parameters Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -180,6 +200,9 @@ Depends: libgz-transport16-core-dev (= ${binary:Version}),
          libgz-transport16-log-dev (= ${binary:Version}),
          libgz-transport16-parameters-dev (= ${binary:Version}),
          ${misc:Depends}
+Provides: libgz-transport-dev-generic
+Conflicts: libgz-transport-dev-generic, libgz-transport11-dev, libgz-transport13-dev, libgz-transport14-dev, libgz-transport15-dev
+Replaces: libgz-transport11-dev, libgz-transport13-dev, libgz-transport14-dev, libgz-transport15-dev
 Multi-Arch: same
 Description: Gazebo transport Library - Metapackage
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -200,6 +223,9 @@ Priority: optional
 Depends:
      libgz-transport16 (= ${binary:Version}),
      ${misc:Depends}
+Provides: libgz-transport-dbg-generic
+Conflicts: libgz-transport-dbg-generic, libgz-transport11-dbg, libgz-transport13-dbg, libgz-transport14-dbg, libgz-transport15-dbg
+Replaces: libgz-transport11-dbg, libgz-transport13-dbg, libgz-transport14-dbg, libgz-transport15-dbg
 Multi-Arch: same
 Description: Gazebo transport Library - Debugging symbols
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -218,10 +244,13 @@ Architecture: any
 Depends:
      libgz-transport16 (= ${binary:Version}),
      python3-pybind11,
-     python3-gz-msgs12,
+     python3-gz-msgs13,
      ${shlibs:Depends},
      ${misc:Depends},
      ${python3:Depends}
+Provides: python3-gz-transport-generic
+Conflicts: python3-gz-transport-generic, python3-gz-transport11, python3-gz-transport13, python3-gz-transport14, python3-gz-transport15
+Replaces: python3-gz-transport11, python3-gz-transport13, python3-gz-transport14, python3-gz-transport15
 Enhances: libgz-transport16
 Description: Gazebo transport Library - Python3 bindings
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
