@@ -1,3 +1,9 @@
+gz-transport16 (16.0.0~pre2-1~resolute) resolute; urgency=medium
+
+  * gz-transport16 16.0.0~pre2-1 release
+
+ -- Addisu Z. Taddese <addisuzt@intrinsic.ai>  Wed, 07 Oct 2026 01:39:56 +0000
+
 gz-transport16 (16.0.0~pre1-1~resolute) resolute; urgency=medium
 
   * gz-transport16 16.0.0~pre1-1 release
